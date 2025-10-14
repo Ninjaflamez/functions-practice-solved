@@ -16,6 +16,17 @@
 
 // Your code goes here...
 
+var arr = ([2, 4, 2]);
+function doesArrayIncludeItemsBetweenVals(val1, val2) {
+  for (var x = 0; x < arr.length; x++) {
+    if (arr[x] > val1 && arr[x] < val2) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(doesArrayIncludeItemsBetweenVals(3, 5));
+console.log(doesArrayIncludeItemsBetweenVals(5, 10));
 
 
 
@@ -36,6 +47,36 @@
 
 // Your code goes here...
 
+// Named Function
+
+function getValueWithConditionOne(value1, value2) {
+  if (value1 === 40 && value2 === 40) {
+    return value1 + value2;
+  } else {
+    return 2 * (value1 + value2);
+  }
+}
+console.log (getValueWithConditionOne(40, 40));
+
+
+// Arrow Function
+
+const getValueWithConditionTwo = (num1, num2) => {
+  return (num1 ===20 && num2 === 30) ? num1 + num2 : 2 * (num1 + num2);
+}
+console.log(getValueWithConditionTwo(20, 30));
+
+
+//Variable name for the function
+
+const getValueWitheConditionthree = function(number1, number2) {
+    if (number1 === 50 && number2 ===60) {
+        return number1 + number2;
+    } else {
+        return 2 * (number1 + number2);
+    }
+}
+console.log(getValueWitheConditionthree(50, 60));
 
 
 

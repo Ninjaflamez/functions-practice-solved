@@ -13,8 +13,14 @@
  * logMessage() => 'Hello, World!'
 */
 
-// Your code goes here
+// Your code goes here...
 
+function logMessage() {
+  return logMessage;
+}
+var logMe = 'Hello ' + 'World';
+
+console.log(logMe);
 
 
 
@@ -31,7 +37,18 @@
 
 // Your code goes here...
 
+function logMyMessage(p1, p2) {
+    var myMessage = p1 + p2;
+  return p1 + p2;
+}
+var p1 = 'Hood Sliding like ';
+var p2 = 'Bo Duke';
 
+var myMessage = p1 + p2;
+
+console.log(logMyMessage);
+console.log(typeof myMessage);
+console.log(myMessage);
 
 
 /**
@@ -46,8 +63,18 @@
 
 // Your code goes here...
 
+function logMessageWithMyName(pt1, pt2) {
+    var myName = pt1 + pt2;
+  return pt1 + pt2;
+}
+var pt1 = 'My name is ';
+var pt2 = 'Ninjaflamez';
 
+var myName = pt1 + pt2;
 
+console.log(logMessageWithMyName);
+console.log(typeof myName);
+console.log(myName);
 
 /**
  * ==============================================================
@@ -62,8 +89,18 @@
 
 // Your code goes here...
 
+function logMyInfo(name, age) {
+  var myInfo = name + age;
+  return name + age;
+}
+var name = 'My name is Ninjaflamez. ';
+var age = 'And I am old enough to remember 8-track tapes!';
 
+var myInfo = name + age;
 
+console.log(logMyInfo);
+console.log(typeof myInfo);
+console.log(myInfo);
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"
