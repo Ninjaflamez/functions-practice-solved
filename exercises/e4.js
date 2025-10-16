@@ -59,7 +59,7 @@ const logSecondsUpToMax = (max) => {
     }
   }, 1000);
 }
-Console.log('Start Timer!', 'You will need to uncomment to see the count happen.')
+Console.log('Start Timer!');
 logSecondsUpToMax(10);
 
 
