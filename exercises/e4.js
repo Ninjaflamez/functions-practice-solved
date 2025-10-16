@@ -9,8 +9,8 @@
  * splitFirstAndLastNames('John Smith') => ['John', 'Smith']
  */
 
-const splitFirstAndLastNames = (str) => {
-  return str.split(' ');
+const splitFirstAndLastNames = (string) => {
+  return string.split(' ');
 }
 console.log(splitFirstAndLastNames('Ninja Flamez'));
 
@@ -21,10 +21,10 @@ console.log(splitFirstAndLastNames('Ninja Flamez'));
  * personAge({ id: 1, name: 'Someone', age: 32}) => 32
  */
 
-const personAge = (personObject) => {
-  return personObject.age;
+const personAge = (personobject) => {
+  return personobject.age;
 }
-console.log(personAge({Name: 'Ninjaflamez', age: 32}));
+console.log(personAge({Name: 'Ninjaflamez', age: 123}));
 
 
 /** =========================
@@ -50,7 +50,7 @@ console.log(isNameInArray(['Ninja', 'Flamez'], 'Guy'));
  */
 
 const logSecondsUpToMax = (max) => {
-  let i = 0;
+  var i = 0;
   const timer = setInterval(() => {
     if (i < max) {
       console.log(++i);
